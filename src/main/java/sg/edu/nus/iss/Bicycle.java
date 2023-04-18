@@ -1,11 +1,19 @@
 package sg.edu.nus.iss;
 
-public class Bicycle {
+public class Bicycle implements Startable {
     private int gear;
     private int speed;
     
     public Bicycle() {
     }
+
+    
+    public Bicycle(int gear, int speed) {
+        this.gear = gear;
+        this.speed = speed;
+    }
+
+
     public int getGear() {
         return gear;
     }
